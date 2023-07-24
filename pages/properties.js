@@ -4,9 +4,21 @@ import { DownOutlined } from "@ant-design/icons";
 import Header from "../components/header";
 import PropertiesGridContainer from "../components/properties-grid-container";
 import Footer from "../components/footer";
+import { createClient } from "@supabase/supabase-js";
+import { useEffect, useState } from "react";
 
 const defaultOrder = [];
 const PropertiesGridView = () => {
+const [properties, setProperties] = useState([])
+  const client = createClient(process.env.NEXT_PUBLIC_URL, process.env.NEXT_PUBLIC_KEY)
+
+  useEffect (() => {
+    const fetchProperties = async () => {
+      const result = await client.from('properties').select('*')
+      setProperties(result.data)
+    }
+    fetchProperties()
+  }, [] )
   return (
     <div className="bg-gray-white w-full flex flex-col items-start justify-start text-center text-33xl text-gray-white font-body-regular-400">
       <Header hamburger={false} />
@@ -41,7 +53,7 @@ const PropertiesGridView = () => {
             </Dropdown>
           </div>
         </div>
-        <PropertiesGridContainer />
+        <PropertiesGridContainer allProperties = {properties}/>
       <Pagination 
       defaultCurrent={1}
       total={50}
