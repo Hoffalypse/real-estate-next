@@ -11,7 +11,7 @@ const defaultOrder = [];
 const PropertiesGridView = () => {
 const [properties, setProperties] = useState([])
   const client = createClient(process.env.NEXT_PUBLIC_URL, process.env.NEXT_PUBLIC_KEY)
-
+console.log(process.env.NEXT_PUBLIC_URL)
   useEffect (() => {
     const fetchProperties = async () => {
       const result = await client.from('properties').select('*')
