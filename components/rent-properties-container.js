@@ -16,60 +16,24 @@ const RentPropertiesContainer = () => {
         </div>
         <div className="self-stretch flex flex-row flex-wrap py-0 px-2.5 items-center justify-center gap-[32px]">
           <PropertyCard
-            propertyImage="/unsplashrlwe8f8anoc7@2x.png"
-            car="/car5.svg"
-            bathtub="/bathtub5.svg"
-            arrowsOut="/arrowsout2.svg"
-            ellipse1="/ellipse-1@2x.png"
-            shareNetwork="/sharenetwork6.svg"
-            heart="/heart2.svg"
-            plus="/plus7.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc7@2x.png"
+           name= "2211 S Whittier Springfield Il"
+           price= '86,753'
           />
           <PropertyCard
-            propertyImage="/unsplashrlwe8f8anoc8@2x.png"
-            car="/car5.svg"
-            bathtub="/bathtub5.svg"
-            arrowsOut="/arrowsout2.svg"
-            ellipse1="/ellipse-1@2x.png"
-            shareNetwork="/sharenetwork6.svg"
-            heart="/heart2.svg"
-            plus="/plus8.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc8@2x.png"
+           name= '10301 W 6nd Ave Aravda Co'
+           price = '426,504'
           />
           <PropertyCard
-            propertyImage="/unsplashrlwe8f8anoc9@2x.png"
-            car="/car6.svg"
-            bathtub="/bathtub.svg"
-            arrowsOut="/arrowsout3.svg"
-            ellipse1="/ellipse-1@2x.png"
-            shareNetwork="/sharenetwork7.svg"
-            heart="/heart2.svg"
-            plus="/plus3.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc9@2x.png"
+            name='888 Logan St Denver Co'
+            price = '1,075,642'
           />
           <PropertyCard
-            propertyImage="/unsplashrlwe8f8anoc10@2x.png"
-            car="/car6.svg"
-            bathtub="/bathtub.svg"
-            arrowsOut="/arrowsout3.svg"
-            ellipse1="/ellipse-1@2x.png"
-            shareNetwork="/sharenetwork7.svg"
-            heart="/heart2.svg"
-            plus="/plus3.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc10@2x.png"
+            name = "777 Richman Ave Blackhawk Co"
+            price = "528,000"
           />
         </div>
       </div>
